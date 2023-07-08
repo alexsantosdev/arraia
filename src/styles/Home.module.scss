@@ -1,0 +1,281 @@
+.mainContainer {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    background: url('/images/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    align-items: center;
+    
+    height: 100% !important;
+
+    .formContent {
+        margin: 96px 0;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+        align-self: center;
+
+        width: 100%;
+        max-width: 560px;
+
+        gap: 32px;
+
+        .contentPanel {
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            
+            width: 100%;
+
+            background: var(--white);
+
+            border: 1px solid var(--gray-110);
+            border-radius: 8px;
+
+            -webkit-box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.22);
+            -moz-box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.22);
+            box-shadow: 0px 2px 2px -1px rgba(0,0,0,0.22);
+
+            form {
+                padding: 32px;
+
+                display: flex;
+                flex-direction: column;
+
+                gap: 16px;
+
+                h2 {
+                    font-size: 22px;
+                    font-weight: 600;
+
+                    color: var(--gray-900);
+                }
+
+                span {
+                    font-weight: 500;
+                    font-size: 16px;
+
+                    color: var(--gray-500);
+
+                    padding: 8px 0;
+                }
+
+                .inputGroup {
+                    width: 100%;
+    
+                    display: flex;
+                    flex-direction: column;
+    
+                    gap: 8px;
+    
+                    label {
+                        font-size: 14px;
+                        font-weight: 500;
+    
+                        color: var(--gray-700);
+                    }
+    
+                    input, select {
+                        width: 100%;
+    
+                        padding: 10px 14px;
+                        background: var(--white);
+    
+                        border: 1px solid var(--gray-175);
+                        border-radius: 8px;
+    
+                        outline: 0;
+    
+                        &.error {
+                            border-color: var(--red-500);
+                        }
+    
+                        &:focus {
+                            border-color: var(--yellow-500);
+                        }
+                    }
+    
+                    span {
+                        color: var(--gray-500);
+    
+                        font-size: 14px;
+                        align-self: flex-start;
+                    }
+                }
+
+                button {
+                    background: var(--white);
+                    border: 1px solid var(--gray-175);
+
+                    border-radius: 8px;
+
+                    padding: 10px 14px;
+
+                    width: 100%;
+
+                    font-weight: 500;
+                    color: var(--gray-700);
+
+                    &.cancelButton {
+                        background: var(--red-500);
+                        color: var(--white);
+                    }
+
+                    &.includeButton {
+                        background: var(--blue-500);
+                        color: var(--white);
+                    }
+
+                    &.confirmButton {
+                        background: var(--green-300);
+                        color: var(--gray-700);
+                    }
+
+                    &:hover {
+                        transition: filter .2s;
+                        filter: brightness(0.9);
+                    }
+                }
+
+                hr {
+                    border: none;
+                    border-bottom: 1px solid var(--gray-110);
+                }
+
+                .row {
+                    display: flex;
+                    flex-direction: row;
+
+                    gap: 8px;
+                }
+            }
+        }
+    }
+}
+
+.confirmedContent {
+    padding: 22px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 24px;
+
+    img {
+        width: 160px;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    span {
+        font-size: 16px;
+        font-weight: 500;
+
+        color: var(--gray-500);
+    }
+
+    .eventContainer {
+        display: flex;
+        flex-direction: column;
+
+        gap: 12px;
+
+        border: 1px solid var(--gray-150);
+        border-radius: 8px;
+
+        padding: 0 12px;
+
+        .eventHeader {
+            border-bottom: 1px solid var(--gray-150);
+
+            padding: 7px 0;
+
+            h2 {
+                font-size: 18px;
+            }
+        }
+
+        .eventBody {
+            display: flex;
+            flex-direction: row;
+
+            gap: 12px;
+
+            align-items: center;
+
+            h2 {
+                font-size: 38px;
+                font-weight: 900;
+            }
+
+            .time {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .guestInfo {
+                display: flex;
+                flex-direction: column;
+
+                gap: 8px;
+
+                h1 {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .eventFooter {
+            border-top: 1px solid var(--gray-150);
+            padding: 7px 0;
+
+            display: flex;
+            flex-direction: row;
+
+            align-items: center;
+
+            gap: 8px;
+
+            span {
+                font-size: 12px;
+            }
+
+            a {
+                flex: 8;
+                white-space: nowrap;
+
+                display: flex;
+                flex-direction: row;
+
+                align-items: center;
+
+                gap: 8px;
+
+                padding: 10px 14px;
+
+                border: 1px solid var(--blue-500);
+                border-radius: 8px;
+
+                color: var(--blue-500);
+
+                &:hover {
+                    transition: filter .2s;
+                    filter: brightness(0.8);
+                }
+            }
+        }
+    }
+}

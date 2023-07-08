@@ -1,0 +1,80 @@
+.badgeContainer {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+    padding: 4px 10px !important;
+
+    border-radius: 32px;
+
+    width: max-content;
+    align-self: center;
+
+    .badgeBase {
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 2px 8px !important;
+
+        border-radius: 32px !important;
+
+        span {
+            font-size: 12px !important;
+        }
+    }
+
+    .badgeContent {
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: center;
+
+        span {
+            font-size: 12px !important;
+            font-weight: 500;
+        }
+    }
+
+    &.error {
+        background: var(--red-100);
+
+        .badgeBase {
+            background: var(--red-600);
+            
+            span {
+                color: var(--white) !important;
+            }
+        }
+
+        .badgeContent {
+            span {
+                color: var(--red-700) !important;
+            }
+        }
+    }
+
+    &.alert {
+        background: var(--yellow-100);
+
+        .badgeBase {
+            background: var(--yellow-500);
+            
+            span {
+                color: var(--white);
+            }
+        }
+
+        .badgeContent {
+            span {
+                color: var(--yellow-700);
+            }
+        }
+    }
+}

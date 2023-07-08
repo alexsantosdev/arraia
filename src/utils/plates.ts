@@ -1,0 +1,21 @@
+export const platesList = [
+    'Bolo de milho',
+    'Bolo de fubá',
+    'Curau',
+    'Caldo verde',
+    'Caldo',
+    'Torta de frango',
+    'Torta de frios',
+    'Torta de palmito',
+    'Salgadinhos 1',
+    'Salgadinhos 2',
+    'Salgadinhos 3',
+    'Cuscuz',
+    'Cachorro quente 1',
+    'Cachorro quente 2',
+    'Buraco quente 1',
+    'Buraco quente 2',
+    'Arroz doce 1',
+    'Arroz doce 2',
+    'Canjica'
+]
