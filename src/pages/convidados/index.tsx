@@ -14,7 +14,7 @@ type CompanionType = {
   
 type GuestType = {
     name : string,
-    phone: string,
+    typicalPlate: string,
     rg: string
 }
 
@@ -48,7 +48,7 @@ export default function Convidados() {
           const parsedData = Object.entries(data).map(([key, value]) => {
             return {
               name: value.name,
-              phone: value.phone,
+              typicalPlate: value.typicalPlate,
               rg: value.rg
             }
           })
@@ -106,7 +106,7 @@ export default function Convidados() {
                                     <li key={g.rg}>
                                         <span>{g.name}</span>
                                         <div className={styles.guestData}>
-                                            <h4>Cel: {g.phone}</h4>
+                                            <h4>Prato: {g.typicalPlate}</h4>
                                             <h4>RG: {g.rg}</h4>
                                         </div>
                                         <span className={styles.subtitle}>Acompanhantes:</span>
@@ -117,7 +117,6 @@ export default function Convidados() {
                                                         <li key={comp.rg}>
                                                             <span>{comp.name}</span>
                                                             <div className={styles.companionData}>
-                                                                <h4>Cel: {comp.phone}</h4>
                                                                 <h4>RG: {comp.rg}</h4>
                                                             </div>
                                                         </li>

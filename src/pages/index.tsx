@@ -218,8 +218,8 @@ export default function Home() {
                   <div className={styles.eventBody}>
                     <h2>15:00</h2>
                     <div className={styles.time}>
-                      <span>GMT 03:00</span>
-                      <span>Brasilia</span>
+                      <span>dia</span>
+                      <span>23/07</span>
                     </div>
                   </div>
                   <div className={styles.eventFooter}>

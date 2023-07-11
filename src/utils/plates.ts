@@ -5,17 +5,20 @@ export const platesList = [
     'Caldo verde',
     'Caldo',
     'Torta de frango',
+    'Torta de frango 2',
     'Torta de frios',
     'Torta de palmito',
     'Salgadinhos 1',
     'Salgadinhos 2',
     'Salgadinhos 3',
     'Cuscuz',
+    'Cuscuz 2',
     'Cachorro quente 1',
     'Cachorro quente 2',
     'Buraco quente 1',
     'Buraco quente 2',
     'Arroz doce 1',
     'Arroz doce 2',
-    'Canjica'
+    'Canjica',
+    'Canjica  2'
 ]
